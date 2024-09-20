@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
-import Word from "./Word";
+// 특정 날짜를 클릭해서 들어왔을 때 단어들이 나오는 페이지
 import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import Word from "./Word";
 
-const WordList = ({ day }) => {
+const WordList = () => {
+  const { day } = useParams();
   const [wordList, setWordList] = useState([]);
 
   const getWordList = async () => {
@@ -21,13 +24,16 @@ const WordList = ({ day }) => {
   }, []);
 
   return (
-    <table>
-      <tbody>
-        {wordList.map((word) => (
-          <Word key={word.id} word={word} getWordList={getWordList} />
-        ))}
-      </tbody>
-    </table>
+    <>
+      <h2>Day {day}</h2>
+      <table>
+        <tbody>
+          {wordList.map((word) => (
+            <Word key={word.id} word={word} getWordList={getWordList} />
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 };
 

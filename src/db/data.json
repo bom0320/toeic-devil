@@ -33,13 +33,6 @@
       "isDone": false
     },
     {
-      "id": "6",
-      "day": 3,
-      "eng": "pencil",
-      "kor": "연필",
-      "isDone": false
-    },
-    {
       "day": "3",
       "eng": "window",
       "kor": "창문",

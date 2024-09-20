@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { DayDetail, DayList, Header } from "./components";
+import { DayList, Header, WordList } from "./components";
 function App() {
   return (
     <div className="App">
@@ -7,7 +7,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<DayList />} />
-          <Route path="/day/:day" element={<DayDetail />} />
+          <Route path="/day/:day" element={<WordList />} />
           <Route path="*" element={<span children={"없는 페이지"} />} />
         </Routes>
       </BrowserRouter>

@@ -1,7 +1,7 @@
 // 날짜 목록을 표시
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
+import Day from "./Day";
 
 const DayList = () => {
   const [days, setDays] = useState([]);
@@ -31,9 +31,7 @@ const DayList = () => {
   return (
     <ul className="list_day">
       {days.map((day) => (
-        <li key={day.id}>
-          <Link to={`/day/${day.day}`}>Day {day.day}</Link>
-        </li>
+        <Day key={day.id} day={day.day} />
       ))}
     </ul>
   );
