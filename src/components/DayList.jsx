@@ -26,7 +26,7 @@ const DayList = () => {
 
   // getData,useEffect : 이 코드들에 의해 컴포넌트 상태 days 는 처음에는 빈 배열로 초기화되어 있었지만,
   // HTTP 요청을 통해 data.json 파일의 days 데이터를 서버에서 가져오고, 그 데이터를 상태로 저장하면서
-  // data.json 의 days 와 연결된 것 처럼 동작하는 것이다. 
+  // data.json 의 days 와 연결된 것 처럼 동작하는 것이다.
 
   return (
     <ul className="list_day">
