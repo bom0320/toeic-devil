@@ -30,7 +30,7 @@
       "day": 3,
       "eng": "school",
       "kor": "학교",
-      "isDone": false
+      "isDone": true
     },
     {
       "day": "3",
@@ -59,6 +59,13 @@
       "kor": "사과",
       "isDone": false,
       "id": "12"
+    },
+    {
+      "id": "0914",
+      "day": "1",
+      "eng": "hi-v2",
+      "kor": "개쩌는거임",
+      "isDone": false
     }
   ]
 }

@@ -1,13 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { DayList, Header, WordList } from "./components";
+import { Header } from "./components";
+import { DayListPage, WordListPage } from "./pages";
+import CreateWordPage from "./pages/CreateWordPage";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<DayList />} />
-          <Route path="/day/:day" element={<WordList />} />
+          <Route path="/" element={<DayListPage />} />
+          <Route path="/day/:day" element={<WordListPage />} />
+          <Route path="/create-word" element={<CreateWordPage />} />
           <Route path="*" element={<span children={"없는 페이지"} />} />
         </Routes>
       </BrowserRouter>

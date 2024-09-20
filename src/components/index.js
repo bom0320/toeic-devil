@@ -1,3 +1,3 @@
-export { default as DayList } from "./DayList";
-export { default as WordList } from "./WordList";
+export { default as Day } from "./Day";
 export { default as Header } from "./Header";
+export { default as Word } from "./Word";

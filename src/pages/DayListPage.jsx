@@ -1,9 +1,9 @@
 // 날짜 목록을 표시
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Day from "./Day";
+import { Day } from "../components";
 
-const DayList = () => {
+const DayListPage = () => {
   const [days, setDays] = useState([]);
   // 여기 컴포넌트 상태 days 는 자체적으로 data.json 의 데이터를 나타내는 것이 아니라, HTTP 요청을 통해
   // 그 데이터를 가져 온 후 상태로 관리하게 된다.
@@ -37,4 +37,4 @@ const DayList = () => {
   );
 };
 
-export default DayList;
+export default DayListPage;

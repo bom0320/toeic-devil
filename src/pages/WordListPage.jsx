@@ -2,9 +2,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Word from "./Word";
+import { Word } from "../components";
 
-const WordList = () => {
+const WordListPage = () => {
   const { day } = useParams();
   const [wordList, setWordList] = useState([]);
 
@@ -37,4 +37,4 @@ const WordList = () => {
   );
 };
 
-export default WordList;
+export default WordListPage;

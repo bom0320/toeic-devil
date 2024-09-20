@@ -10,11 +10,11 @@ const Word = ({ word, getWordList }) => {
 
   const [isDone, setIsDone] = useState(word.isDone);
   // 단어가 완료됐는지 -> 단어 객체에서 해당 상태 가져옴
-
+  
   return (
     <tr className={isDone ? "off" : ""}>
       <td>
-        <WordCheckbox isDone={isDone} setIsDone={setIsDone} />
+        <WordCheckbox isDone={isDone} setIsDone={setIsDone} word={word} />
       </td>
       <td>
         <EngWord eng={word.eng} />
