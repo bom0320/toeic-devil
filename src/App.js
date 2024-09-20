@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./components";
 import { DayListPage, WordListPage } from "./pages";
 import CreateWordPage from "./pages/CreateWordPage";
+
 function App() {
   return (
     <div className="App">

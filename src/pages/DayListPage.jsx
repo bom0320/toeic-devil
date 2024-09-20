@@ -8,7 +8,7 @@ const DayListPage = () => {
   // 여기 컴포넌트 상태 days 는 자체적으로 data.json 의 데이터를 나타내는 것이 아니라, HTTP 요청을 통해
   // 그 데이터를 가져 온 후 상태로 관리하게 된다.
 
-  const getData = async () => {
+  const getDays = async () => {
     try {
       const { data: dayListData } = await axios.get(
         "http://localhost:3001/days"
@@ -21,7 +21,7 @@ const DayListPage = () => {
 
   // useEffect는 컴포넌트가 처음 렌더링될 때 getData 함수를 호출하여 서버에서 날짜 목록을 가져옵니다.
   useEffect(() => {
-    getData();
+    getDays();
   }, []);
 
   // getData,useEffect : 이 코드들에 의해 컴포넌트 상태 days 는 처음에는 빈 배열로 초기화되어 있었지만,
