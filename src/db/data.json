@@ -26,13 +26,6 @@
       "isDone": false
     },
     {
-      "id": "5",
-      "day": 3,
-      "eng": "school",
-      "kor": "학교",
-      "isDone": true
-    },
-    {
       "day": "3",
       "eng": "window",
       "kor": "창문",
@@ -65,7 +58,7 @@
       "day": "1",
       "eng": "hi-v2",
       "kor": "개쩌는거임",
-      "isDone": false
+      "isDone": true
     }
   ]
 }
