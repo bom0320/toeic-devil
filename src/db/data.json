@@ -59,6 +59,13 @@
       "eng": "hi-v2",
       "kor": "개쩌는거임",
       "isDone": true
+    },
+    {
+      "id": "458a",
+      "day": "2",
+      "eng": "computer",
+      "kor": "컴퓨터",
+      "isDone": false
     }
   ]
 }
